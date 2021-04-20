@@ -1,0 +1,11 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://playground-dev-ed.my.salesforce.com",
+  "sourceApiVersion": "51.0"
+}
