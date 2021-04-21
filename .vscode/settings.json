@@ -5,7 +5,9 @@
     "**/.sfdx": true
   },
   "salesforcedx-vscode-core.detectConflictsAtSync": true,
-  "salesforcedx-vscode-core.enable-sobject-refresh-on-startup": true,
   "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true,
-  "salesforcedx-vscode-core.retrieve-test-code-coverage": true
+  "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+  "salesforcedx-vscode-core.experimental.deployRetrieve": false,
+  "salesforcedx-vscode-core.enable-sobject-refresh-on-startup": true,
+  "salesforcedx-vscode-core.show-cli-success-msg": false
 }
