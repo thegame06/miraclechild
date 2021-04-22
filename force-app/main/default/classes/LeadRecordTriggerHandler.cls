@@ -23,5 +23,15 @@ public with sharing class LeadRecordTriggerHandler {
     
     public static void afterUpdateHandler(list<Lead_Record__c> lstLeadRecord){
         // Business logic.
+        for (Lead_Record__c record : lstLeadRecord) {
+            if (record.Status__c == 'Close') 
+            {
+                if (record.Country__c == 'USA United States' || record.Country__c == 'CAN Canada') { 
+
+                } else {
+                    EmailManager.sendMail(record.Email__c, 'Sponsoring a Child', 'You can’t enroll in the App.');
+                }
+            }
+        }        
     }     
 }
