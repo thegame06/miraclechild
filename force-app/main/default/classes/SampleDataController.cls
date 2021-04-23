@@ -11,6 +11,7 @@ public with sharing class SampleDataController {
     @AuraEnabled
     public static boolean uploadFiles(List<Map<String, Object>> files){
         Boolean isSuccess = false;        
+
         List<Lead_Record__c> leadRecords = new List<Lead_Record__c>();
         for (Map<String, Object> file : files) {
             String fileJson = (String)file.get('Content');            

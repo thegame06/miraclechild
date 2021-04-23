@@ -35,6 +35,7 @@ export default class SampleDataImporter extends LightningElement {
                 this.filesUploaded = [];
             })
             .catch(error => {
+                this.filesUploaded = [];
                 this.showToastMessage('Error','Error uploading files', 'error');
             });
     }
